@@ -57,9 +57,9 @@ Universal Robots UR3e  (or URSim)
 | [`docs/`](docs/) | LaTeX source of the paper (`main.tex`, `chapters/`), figures, tables generated from telemetry, the presentation |
 | [`src/`](src/) | the pipeline: `optitrack/` (NatNet client and sources), `kinematics/`, `filtering/`, `safety/`, `robot/` (RTDE backend), `pipeline/` (125 Hz loop), `tools/` (analysis scripts), `tests/` |
 | [`testing/`](testing/) | lab protocols, session scripts and diagnostics (`lab/`), URSim scripts (`virtual/`) |
-| [`data/`](data/) | raw lab recordings and telemetry, processed clips, benchmarks and sweeps, literature list in `SOURCES_LOG.md` |
+| [`data/`](data/) | raw lab recordings and telemetry, processed clips, benchmarks and sweeps, the literature list with links in `SOURCES_LOG.md` |
 | [`scripts/`](scripts/) | `build-docs.ps1` and `build-docs.sh` to compile the paper |
-| [`TASK/`](TASK/) | the course task, the literature overview and the lab checklist |
+| [`TASK/`](TASK/) | the work plan for the course task, the literature overview and the lab checklist |
 
 [`src/README.md`](src/README.md) and [`testing/lab/README.md`](testing/lab/README.md) describe how
 to run the system with the real robot and a live OptiTrack stream.
@@ -81,9 +81,10 @@ python -m src.tools.track_analysis run.track.csv
 Compile the paper with `.\scripts\build-docs.ps1` (Windows) or `./scripts/build-docs.sh`
 (Linux/macOS). The output goes to `dist/v1/`.
 
-The literature PDFs, raw CSV files and the `.pptx` are stored with Git LFS, so run
-`git lfs install` before cloning. The working copy is about 1 GB, most of it lab video and raw
-recordings.
+The raw CSV files and the `.pptx` are stored with Git LFS, so run `git lfs install` before
+cloning. The working copy is about 1 GB, most of it lab video and raw recordings. The papers cited
+in the seminar are not in the repository for copyright reasons. [`data/SOURCES_LOG.md`](data/SOURCES_LOG.md)
+links each one, and `data/sources/` is where to put the PDFs.
 
 ## Results
 

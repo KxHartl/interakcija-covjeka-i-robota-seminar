@@ -58,3 +58,7 @@ dist/**/*.pdf
 IDEAS.md
 TODO.md
 TestRealm/
+
+# Third-party material kept on disk only (public repository)
+data/sources/*.pdf
+TASK/original_task.md
